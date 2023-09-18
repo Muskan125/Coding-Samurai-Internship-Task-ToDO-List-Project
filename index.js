@@ -37,7 +37,7 @@ function addtask(){
     {
         let row = button.closest("tr");
         row.remove();
-
+        updateSerialNumbers();
         displaymsg();
     }
 
@@ -46,3 +46,19 @@ function addtask(){
         let msg = document.querySelector(".displaymsg p");
         msg.innerHTML = "You have "+pendingTasks+" task pending";
     }
+    function updateSerialNumbers() {
+        let table = document.querySelector(".tasktable table");
+        let rows = table.rows;
+        
+        // Start from 1 to skip the header row
+        for (let i = 1; i < rows.length; i++) {
+            rows[i].cells[0].innerHTML = i;
+        }
+    }
+    
+   
+    
+    
+    
+    
+    
