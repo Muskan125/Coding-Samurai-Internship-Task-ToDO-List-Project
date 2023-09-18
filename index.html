@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Infant:wght@600&display=swap');
+      </style>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+<div class="main">
+    <h1><i class="fa fa-list">  To-Do List</i></h1>
+   
+    <div class="clinput">
+    <input type="text" id="input_task" placeholder="Enter Your Task">
+    <button onClick="addtask()">Save</button>
+    </div>
+    <div class="displaymsg"><p>You have 0 task pending</p></div>
+    <div class="tasktable">
+        <table>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Task</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+</body>
+</html>
